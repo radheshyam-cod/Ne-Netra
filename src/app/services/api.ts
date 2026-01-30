@@ -8,10 +8,9 @@ import { offlineManager } from './offline-manager';
 import { mockApi } from './mock-api';
 
 const API_BASE_URL = 'http://localhost:8000';
-const IS_PRODUCTION = import.meta.env.PROD;
 
-// Use mock API in production (GitHub Pages)
-const USE_MOCK = IS_PRODUCTION || !navigator.onLine;
+// Always use mock API when not on localhost
+const USE_MOCK = !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
 
 export interface RiskScoreData {
   district: string;
