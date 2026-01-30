@@ -1,0 +1,238 @@
+@custom-variant dark (&:is(.dark *));
+
+/* NE-NETRA Government Intelligence Dashboard Design System */
+
+:root {
+  /* ============================================
+     SPACING SYSTEM (8px grid)
+     ============================================ */
+  --spacing-1: 0.5rem;
+  /* 8px */
+  --spacing-2: 1rem;
+  /* 16px */
+  --spacing-3: 1.5rem;
+  /* 24px */
+  --spacing-4: 2rem;
+  /* 32px */
+  --spacing-5: 2.5rem;
+  /* 40px */
+  --spacing-6: 3rem;
+  /* 48px */
+  --spacing-8: 4rem;
+  /* 64px */
+
+  /* ============================================
+     TYPOGRAPHY SYSTEM - AUTHORITATIVE
+     ============================================ */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Roboto Mono', monospace;
+  /* For numbers/IDs */
+
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-lg: 1.125rem;
+  /* 18px */
+  --text-xl: 1.25rem;
+  /* 20px */
+  --text-2xl: 1.5rem;
+  /* 24px */
+  --text-3xl: 1.875rem;
+  /* 30px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ============================================
+     COLOR PALETTE - DEEP NAVY (STRICT DARK MODE)
+     ============================================ */
+
+  /* Backgrounds */
+  --background: #020617;
+  /* App Background (Deep Navy) */
+  --background-secondary: #0f172a;
+  /* Card Background (Navy) */
+  --background-tertiary: #1e293b;
+  /* Hover/Input Background */
+
+  /* Sidebar Specific */
+  --sidebar-bg: #020617;
+  /* Darker than cards */
+  --sidebar-border: #1e293b;
+  --sidebar-foreground: #94a3b8;
+  --sidebar-active: #3b82f6;
+  --sidebar-active-bg: rgba(59, 130, 246, 0.1);
+
+  /* Foreground */
+  --foreground: #f8fafc;
+  /* Primary Text (White/Slate-50) */
+  --foreground-secondary: #cbd5e1;
+  /* Secondary Text (Slate-300) */
+  --foreground-tertiary: #64748b;
+  /* Muted Text (Slate-500) */
+
+  /* Borders */
+  --border: #1e293b;
+  /* Default Border */
+  --border-subtle: #334155;
+  /* Subtle Border */
+
+  /* UI Elements */
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+
+  /* Accents */
+  --primary: #3b82f6;
+  /* Government Blue */
+  --primary-foreground: #ffffff;
+  --primary-hover: #2563eb;
+
+  /* Risk Indicators (Semantic) */
+  --severity-low: #10b981;
+  /* Green */
+  --severity-low-bg: rgba(16, 185, 129, 0.1);
+  --severity-low-text: #6ee7b7;
+
+  --severity-medium: #f59e0b;
+  /* Amber */
+  --severity-medium-bg: rgba(245, 158, 11, 0.1);
+  --severity-medium-text: #fcd34d;
+
+  --severity-high: #ef4444;
+  /* Red */
+  --severity-high-bg: rgba(239, 68, 68, 0.1);
+  --severity-high-text: #fca5a5;
+
+  --severity-critical: #dc2626;
+  /* Dark Red */
+  --severity-critical-bg: rgba(220, 38, 38, 0.1);
+
+  /* Functional Status */
+  --status-active: #3b82f6;
+  --status-inactive: #64748b;
+
+  /* Forms */
+  --input: #1e293b;
+  --ring: #3b82f6;
+  --radius: 0.5rem;
+  /* 8px */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+
+  --color-sidebar-bg: var(--sidebar-bg);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-active-bg: var(--sidebar-active-bg);
+
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-tertiary: var(--foreground-tertiary);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-severity-low: var(--severity-low);
+  --color-severity-low-bg: var(--severity-low-bg);
+  --color-severity-low-text: var(--severity-low-text);
+
+  --color-severity-medium: var(--severity-medium);
+  --color-severity-medium-bg: var(--severity-medium-bg);
+  --color-severity-medium-text: var(--severity-medium-text);
+
+  --color-severity-high: var(--severity-high);
+  --color-severity-high-bg: var(--severity-high-bg);
+  --color-severity-high-text: var(--severity-high-text);
+
+  --color-severity-critical: var(--severity-critical);
+  --color-ring: var(--ring);
+
+  --font-mono: var(--font-mono);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Typography Scale */
+  h1 {
+    @apply text-3xl font-semibold tracking-tight text-foreground;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold tracking-tight text-foreground;
+  }
+
+  h3 {
+    @apply text-xl font-medium text-foreground;
+  }
+
+  h4 {
+    @apply text-lg font-medium text-foreground;
+  }
+
+  p {
+    @apply text-base text-foreground-secondary leading-relaxed;
+  }
+
+  /* Utilities */
+  .font-mono {
+    font-family: var(--font-mono) !important;
+  }
+
+  .text-label {
+    @apply text-xs font-medium uppercase tracking-wider text-foreground-tertiary;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--foreground-tertiary);
+  }
+
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
