@@ -5,8 +5,13 @@
  */
 
 import { offlineManager } from './offline-manager';
+import { mockApi } from './mock-api';
 
 const API_BASE_URL = 'http://localhost:8000';
+const IS_PRODUCTION = import.meta.env.PROD;
+
+// Use mock API in production (GitHub Pages)
+const USE_MOCK = IS_PRODUCTION || !navigator.onLine;
 
 export interface RiskScoreData {
   district: string;
@@ -84,6 +89,10 @@ class APIService {
    * Get risk score for a district
    */
   async getRiskScore(district: string): Promise<RiskScoreData> {
+    if (USE_MOCK) {
+      return mockApi.getRiskScore(district);
+    }
+
     const response = await fetch(`${API_BASE_URL}/risk-score/${encodeURIComponent(district)}`);
 
     if (!response.ok) {
@@ -97,6 +106,10 @@ class APIService {
    * Get audit log for a district
    */
   async getAuditLog(district: string, limit: number = 10): Promise<AuditLogEntry[]> {
+    if (USE_MOCK) {
+      return mockApi.getAuditLog(district);
+    }
+
     const response = await fetch(
       `${API_BASE_URL}/audit-log/${encodeURIComponent(district)}?limit=${limit}`
     );
@@ -112,6 +125,10 @@ class APIService {
    * Get historical risk scores for trend chart
    */
   async getRiskHistory(district: string): Promise<{ timestamp: string; score: number; risk_level: string }[]> {
+    if (USE_MOCK) {
+      return mockApi.getRiskHistory(district);
+    }
+
     const response = await fetch(`${API_BASE_URL}/risk-history/${encodeURIComponent(district)}`);
 
     if (!response.ok) {
@@ -125,6 +142,10 @@ class APIService {
    * Get list of available districts
    */
   async getDistricts(): Promise<string[]> {
+    if (USE_MOCK) {
+      return mockApi.getDistricts();
+    }
+
     const response = await fetch(`${API_BASE_URL}/districts`);
 
     if (!response.ok) {
@@ -152,6 +173,10 @@ class APIService {
    * Submit officer review (Supports Offline)
    */
   async submitReview(review: OfficerReviewInput): Promise<{ status: string; review_id: number }> {
+    if (USE_MOCK) {
+      return mockApi.submitReview(review);
+    }
+
     if (!navigator.onLine) {
       console.log('Offline mode: Queuing review submission');
       await offlineManager.queueRequest(
@@ -182,6 +207,10 @@ class APIService {
    * Ingest a message (Supports Offline)
    */
   async ingestMessage(message: MessageIngest): Promise<any> {
+    if (USE_MOCK) {
+      return mockApi.ingestData(message);
+    }
+
     if (!navigator.onLine) {
       console.log('Offline mode: Queuing message ingestion');
       await offlineManager.queueRequest(
@@ -211,6 +240,10 @@ class APIService {
    * Trigger analysis for a district
    */
   async analyzeDistrict(district: string): Promise<any> {
+    if (USE_MOCK) {
+      return mockApi.analyzeDistrict(district);
+    }
+
     const response = await fetch(`${API_BASE_URL}/analyze`, {
       method: 'POST',
       headers: {
