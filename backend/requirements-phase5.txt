@@ -1,0 +1,21 @@
+# Phase 5: Automation & Integration Dependencies
+
+# Data Ingestion
+tweepy>=4.14.0  # Twitter/X API
+aiohttp>=3.9.0  # Async HTTP requests
+beautifulsoup4>=4.12.0  # Web scraping (if needed)
+
+# Scheduling
+APScheduler>=3.10.0  # Job scheduling
+
+# Email
+# Built-in: smtplib (no external package needed)
+
+# SMS
+twilio>=8.10.0  # Twilio SMS API
+
+# Existing
+fastapi
+pydantic
+uvicorn
+python-dotenv

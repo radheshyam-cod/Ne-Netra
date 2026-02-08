@@ -12,8 +12,7 @@ import autoTable from 'jspdf-autotable';
  */
 export function exportRiskAnalysisPDF(
     district: string,
-    riskData: RiskScoreData,
-    history: any[]
+    riskData: RiskScoreData
 ) {
     const doc = new jsPDF();
     const timestamp = new Date().toLocaleString('en-IN');
@@ -119,6 +118,64 @@ export function exportRiskAnalysisPDF(
 
     // Save
     const filename = `NE-NETRA_RiskAnalysis_${district.replace(/\s/g, '_')}_${new Date().getTime()}.pdf`;
+    doc.save(filename);
+}
+
+/**
+ * Export District Data to PDF with Date Range
+ */
+export async function exportDistrictToPDF(params: {
+    district: string;
+    dateRange: { start: Date; end: Date };
+}) {
+    const doc = new jsPDF();
+    const timestamp = new Date().toLocaleString('en-IN');
+    const { district, dateRange } = params;
+    const startStr = dateRange.start.toLocaleDateString();
+    const endStr = dateRange.end.toLocaleDateString();
+
+    // Header
+    doc.setFontSize(20);
+    doc.setTextColor(30, 58, 138); // Primary blue
+    doc.text('NE-NETRA District Report', 14, 20);
+
+    doc.setFontSize(10);
+    doc.setTextColor(100);
+    doc.text(`Generated: ${timestamp}`, 14, 28);
+    doc.text(`District: ${district}`, 14, 34);
+    doc.text(`Date Range: ${startStr} - ${endStr}`, 14, 40);
+
+    // Horizontal line
+    doc.setDrawColor(200);
+    doc.line(14, 44, 196, 44);
+
+    // Summary Section
+    doc.setFontSize(12);
+    doc.setTextColor(0);
+    doc.text('Summary of Activities', 14, 54);
+
+    const days = Math.ceil((dateRange.end.getTime() - dateRange.start.getTime()) / (1000 * 60 * 60 * 24));
+
+    doc.setFontSize(10);
+    doc.text(`Report covers a period of ${days} days.`, 14, 62);
+    doc.text('Detailed analysis not available in offline prototype mode.', 14, 68);
+
+    // Footer
+    const pageCount = doc.getNumberOfPages();
+    for (let i = 1; i <= pageCount; i++) {
+        doc.setPage(i);
+        doc.setFontSize(8);
+        doc.setTextColor(150);
+        doc.text(
+            `NE-NETRA Early Warning Platform - Confidential - Page ${i} of ${pageCount}`,
+            doc.internal.pageSize.width / 2,
+            doc.internal.pageSize.height - 10,
+            { align: 'center' }
+        );
+    }
+
+    // Save
+    const filename = `NE-NETRA_Report_${district.replace(/\s/g, '_')}_${startStr.replace(/\//g, '-')}_to_${endStr.replace(/\//g, '-')}.pdf`;
     doc.save(filename);
 }
 

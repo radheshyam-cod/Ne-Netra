@@ -1,0 +1,2536 @@
+[
+  {
+    "state": "Meghalaya",
+    "district": "East Garo Hills",
+    "location": "Williamnagar",
+    "event_summary": "Market vendors protest against price control measures",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890448",
+    "classification_rationale": "Classified as cognitive risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Garo Hills",
+    "location": "Tura sector",
+    "event_summary": "Border area patrol reports minor incursion attempt foiled",
+    "timestamp": "2026-01-29T16:30:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890506",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "North Garo Hills",
+    "location": "Resubelpara",
+    "event_summary": "Student union calls 12-hour bandh demanding better infrastructure",
+    "timestamp": "2026-01-25T06:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "network"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890539",
+    "classification_rationale": "Classified as network risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South Garo Hills",
+    "location": "Baghmara",
+    "event_summary": "Community dialogue held to resolve land dispute peacefully",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890567",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South West Garo Hills",
+    "location": "Ampati",
+    "event_summary": "Heavy rainfall warning issued for next 48 hours",
+    "timestamp": "2026-02-01T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890592",
+    "classification_rationale": "Classified as cognitive risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "East Khasi Hills",
+    "location": "Shillong city",
+    "event_summary": "Traffic congestion reported due to festival preparations",
+    "timestamp": "2026-01-31T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890619",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Khasi Hills",
+    "location": "Nongstoin",
+    "event_summary": "Agricultural cooperative meets to discuss crop insurance",
+    "timestamp": "2026-01-27T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890644",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "South West Khasi Hills",
+    "location": "Mawkyrwat",
+    "event_summary": "Minor road blockade by transporters over toll rates",
+    "timestamp": "2026-01-26T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "network"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890668",
+    "classification_rationale": "Classified as network risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "Eastern West Khasi Hills",
+    "location": "Mairang",
+    "event_summary": "Health camp organized for remote villages",
+    "timestamp": "2026-01-29T10:30:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "network"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890691",
+    "classification_rationale": "Classified as network risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "Ri-Bhoi",
+    "location": "Nongpoh",
+    "event_summary": "Highway maintenance work causes traffic diversions",
+    "timestamp": "2026-01-28T07:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890715",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "East Jaintia Hills",
+    "location": "Khliehriat",
+    "event_summary": "Mining dispute resolved through arbitration",
+    "timestamp": "2026-01-25T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890737",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Meghalaya",
+    "district": "West Jaintia Hills",
+    "location": "Jowai",
+    "event_summary": "Festival celebration proceeds peacefully with police presence",
+    "timestamp": "2026-01-30T17:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890762",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Baksa",
+    "location": "Mushalpur",
+    "event_summary": "Flood alert issued as river levels rise",
+    "timestamp": "2026-01-28T06:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890785",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Bajali",
+    "location": "Patacharkuchi",
+    "event_summary": "Agricultural market sees price surge in vegetables",
+    "timestamp": "2026-01-29T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890809",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Barpeta",
+    "location": "Barpeta town",
+    "event_summary": "Religious procession conducted with adequate security",
+    "timestamp": "2026-01-30T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890838",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Bongaigaon",
+    "location": "Bongaigaon junction",
+    "event_summary": "Railway workers union stages peaceful dharna",
+    "timestamp": "2026-01-27T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890861",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Chirang",
+    "location": "Bijni",
+    "event_summary": "Wildlife conservation awareness program held",
+    "timestamp": "2026-01-26T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890883",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Dhubri",
+    "location": "Dhubri border",
+    "event_summary": "Border trade checkpoint reports increased activity",
+    "timestamp": "2026-01-31T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area",
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890906",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area, market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Goalpara",
+    "location": "Goalpara town",
+    "event_summary": "School teachers protest delayed salary payments",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890928",
+    "classification_rationale": "Classified as cognitive risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Kamrup",
+    "location": "Rangia",
+    "event_summary": "Traffic police conduct vehicle safety inspection drive",
+    "timestamp": "2026-01-29T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890951",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "location": "Guwahati Rajgarh",
+    "event_summary": "IT sector employees rally for better working conditions",
+    "timestamp": "2026-01-30T18:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890974",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Kokrajhar",
+    "location": "Kokrajhar",
+    "event_summary": "Ethnic reconciliation meeting held successfully",
+    "timestamp": "2026-01-25T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.890997",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Nalbari",
+    "location": "Nalbari",
+    "event_summary": "Farmers cooperative discusses kharif crop planning",
+    "timestamp": "2026-01-27T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891019",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "South Salmara-Mankachar",
+    "location": "Mankachar",
+    "event_summary": "Erosion control measures discussed in public meeting",
+    "timestamp": "2026-01-28T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891042",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Tamulpur",
+    "location": "Tamulpur",
+    "event_summary": "Health department launches vaccination drive",
+    "timestamp": "2026-01-29T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891063",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Biswanath",
+    "location": "Biswanath Chariali",
+    "event_summary": "Traditional festival celebrated with community participation",
+    "timestamp": "2026-01-30T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891087",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Darrang",
+    "location": "Mangaldoi",
+    "event_summary": "Tea garden workers negotiate wage increase",
+    "timestamp": "2026-01-26T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891112",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Sonitpur",
+    "location": "Tezpur outskirts",
+    "event_summary": "Wildlife corridor monitoring intensified",
+    "timestamp": "2026-01-31T07:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891135",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Udalguri",
+    "location": "Udalguri",
+    "event_summary": "Tribal welfare program receives positive response",
+    "timestamp": "2026-01-28T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891158",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Charaideo",
+    "location": "Charaideo",
+    "event_summary": "Historical monument restoration work begins",
+    "timestamp": "2026-01-27T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891180",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Dhemaji",
+    "location": "Dhemaji",
+    "event_summary": "River island residents request better connectivity",
+    "timestamp": "2026-01-29T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891203",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Dibrugarh",
+    "location": "Dibrugarh",
+    "event_summary": "Oil refinery workers association meets management",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891226",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Golaghat",
+    "location": "Golaghat",
+    "event_summary": "Kaziranga wildlife monitoring reports normal activity",
+    "timestamp": "2026-01-25T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891249",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Jorhat",
+    "location": "Jorhat",
+    "event_summary": "Tea auction sees steady prices this week",
+    "timestamp": "2026-01-28T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891270",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Lakhimpur",
+    "location": "Lakhimpur",
+    "event_summary": "Brahmaputra ferry service suspended due to fog",
+    "timestamp": "2026-01-31T06:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891294",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Majuli",
+    "location": "Majuli",
+    "event_summary": "Cultural festival attracts tourists to river island",
+    "timestamp": "2026-01-29T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891316",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Sivasagar",
+    "location": "Sivasagar",
+    "event_summary": "Historical tank cleaning drive completed",
+    "timestamp": "2026-01-27T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891338",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Tinsukia",
+    "location": "Tinsukia",
+    "event_summary": "Coal India workers seek safety equipment upgrades",
+    "timestamp": "2026-01-26T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891359",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Dima Hasao",
+    "location": "Haflong",
+    "event_summary": "Hill district reports minor landslide cleared",
+    "timestamp": "2026-01-30T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891381",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Hojai",
+    "location": "Hojai",
+    "event_summary": "Market vendors association discusses hygiene standards",
+    "timestamp": "2026-01-28T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891420",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Morigaon",
+    "location": "Morigaon",
+    "event_summary": "Boat accident averted by timely rescue operation",
+    "timestamp": "2026-01-29T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891442",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Nagaon",
+    "location": "Nagaon",
+    "event_summary": "District sports meet concludes successfully",
+    "timestamp": "2026-01-31T17:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891464",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Karbi Anglong",
+    "location": "Diphu",
+    "event_summary": "Autonomous council meeting addresses development issues",
+    "timestamp": "2026-01-27T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891487",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "West Karbi Anglong",
+    "location": "Hamren",
+    "event_summary": "Forest department conducts anti-poaching patrol",
+    "timestamp": "2026-01-26T07:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891508",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Cachar",
+    "location": "Silchar",
+    "event_summary": "Barak valley cultural program held peacefully",
+    "timestamp": "2026-01-30T18:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891530",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Hailakandi",
+    "location": "Hailakandi",
+    "event_summary": "Border area residents report improved infrastructure",
+    "timestamp": "2026-01-28T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891553",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Assam",
+    "district": "Karimganj",
+    "location": "Karimganj",
+    "event_summary": "Trade union strike called off after negotiations",
+    "timestamp": "2026-01-29T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "network"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891575",
+    "classification_rationale": "Classified as network risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Anjaw",
+    "location": "Hayuliang",
+    "event_summary": "Border pilgrimage route maintenance completed",
+    "timestamp": "2026-01-27T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891599",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Changlang",
+    "location": "Changlang",
+    "event_summary": "Tribal council meeting discusses land rights",
+    "timestamp": "2026-01-28T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891622",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Dibang Valley",
+    "location": "Anini",
+    "event_summary": "High altitude rescue team conducts drill",
+    "timestamp": "2026-01-29T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891644",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "East Kameng",
+    "location": "Seppa",
+    "event_summary": "Hydropower project workers seek safety measures",
+    "timestamp": "2026-01-30T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891666",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "East Siang",
+    "location": "Pasighat",
+    "event_summary": "Bridge construction work progressing on schedule",
+    "timestamp": "2026-01-26T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891689",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Kamle",
+    "location": "Raga",
+    "event_summary": "Traditional festival celebrated in remote villages",
+    "timestamp": "2026-01-31T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891761",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Kra Daadi",
+    "location": "Jamin",
+    "event_summary": "Healthcare outreach program reaches nomadic communities",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891786",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Kurung Kumey",
+    "location": "Koloriang",
+    "event_summary": "Wildlife conservation awareness drive held",
+    "timestamp": "2026-01-27T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891811",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lepa-Rada",
+    "location": "Basar",
+    "event_summary": "Road connectivity project review meeting held",
+    "timestamp": "2026-01-29T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891834",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lohit",
+    "location": "Tezu",
+    "event_summary": "Border area residents welcome improved facilities",
+    "timestamp": "2026-01-30T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891858",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Longding",
+    "location": "Longding",
+    "event_summary": "Tribal welfare program distributes benefits",
+    "timestamp": "2026-01-25T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891880",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lower Dibang Valley",
+    "location": "Roing",
+    "event_summary": "River monitoring station reports normal levels",
+    "timestamp": "2026-01-28T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891903",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lower Siang",
+    "location": "Likabali",
+    "event_summary": "Agricultural extension program meets farmers",
+    "timestamp": "2026-01-31T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891925",
+    "classification_rationale": "Classified as cognitive risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Lower Subansiri",
+    "location": "Ziro",
+    "event_summary": "Cultural exchange program with neighboring district",
+    "timestamp": "2026-01-27T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891948",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Namsai",
+    "location": "Namsai",
+    "event_summary": "Buddhist monastery festival attracts pilgrims",
+    "timestamp": "2026-01-29T17:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891970",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Pakke-Kessang",
+    "location": "Seijosa",
+    "event_summary": "Wildlife sanctuary patrol reports no incidents",
+    "timestamp": "2026-01-26T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.891991",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Papum Pare",
+    "location": "Itanagar",
+    "event_summary": "State capital sees peaceful political rally",
+    "timestamp": "2026-01-30T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892012",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Shi Yomi",
+    "location": "Tato",
+    "event_summary": "Remote area connectivity improved with new towers",
+    "timestamp": "2026-01-28T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892034",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Siang",
+    "location": "Boleng",
+    "event_summary": "River rafting tourism season begins safely",
+    "timestamp": "2026-01-31T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892057",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Tawang",
+    "location": "Tawang",
+    "event_summary": "Monastery hosts interfaith dialogue",
+    "timestamp": "2026-01-27T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892078",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Tirap",
+    "location": "Khonsa",
+    "event_summary": "Tribal handicrafts exhibition draws visitors",
+    "timestamp": "2026-01-29T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892100",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Upper Dibang Valley",
+    "location": "Anini valley",
+    "event_summary": "High altitude weather station operational",
+    "timestamp": "2026-01-26T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892122",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Upper Siang",
+    "location": "Yingkiong",
+    "event_summary": "Dam safety inspection completed successfully",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892144",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "Upper Subansiri",
+    "location": "Daporijo",
+    "event_summary": "Hydroelectric project EIA public hearing held",
+    "timestamp": "2026-01-28T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892165",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "West Kameng",
+    "location": "Bomdila",
+    "event_summary": "Orchid research center opens to public",
+    "timestamp": "2026-01-31T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892187",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Arunachal Pradesh",
+    "district": "West Siang",
+    "location": "Along",
+    "event_summary": "Along township celebrates foundation day",
+    "timestamp": "2026-01-27T17:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892208",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Bishnupur",
+    "location": "Bishnupur",
+    "event_summary": "Traditional boat race festival conducted peacefully",
+    "timestamp": "2026-01-28T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892231",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Chandel",
+    "location": "Chandel",
+    "event_summary": "Border village development program launched",
+    "timestamp": "2026-01-29T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892252",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Churachandpur",
+    "location": "Churachandpur",
+    "event_summary": "Community leaders meet to promote harmony",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892273",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Imphal East",
+    "location": "Imphal East",
+    "event_summary": "City marathon event attracts large participation",
+    "timestamp": "2026-01-26T07:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 2,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892295",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 2/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Imphal West",
+    "location": "Imphal",
+    "event_summary": "State assembly session proceeds smoothly",
+    "timestamp": "2026-01-31T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892317",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Jiribam",
+    "location": "Jiribam",
+    "event_summary": "Railway connectivity improvement work begins",
+    "timestamp": "2026-01-27T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892338",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Kakching",
+    "location": "Kakching",
+    "event_summary": "Agricultural fair showcases organic farming",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892359",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Kamjong",
+    "location": "Kamjong",
+    "event_summary": "Hill area road repair work completed",
+    "timestamp": "2026-01-29T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892380",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Kangpokpi",
+    "location": "Kangpokpi",
+    "event_summary": "Traditional sports festival held successfully",
+    "timestamp": "2026-01-30T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892407",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Noney",
+    "location": "Noney",
+    "event_summary": "Forest fire prevention awareness campaign",
+    "timestamp": "2026-01-25T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892428",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Pherzawl",
+    "location": "Pherzawl",
+    "event_summary": "Health workers complete vaccination drive",
+    "timestamp": "2026-01-28T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892476",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Senapati",
+    "location": "Senapati",
+    "event_summary": "Youth skill development program inaugurated",
+    "timestamp": "2026-01-31T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892511",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Tamenglong",
+    "location": "Tamenglong",
+    "event_summary": "Wildlife sanctuary monitoring shows positive results",
+    "timestamp": "2026-01-27T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892537",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Tengnoupal",
+    "location": "Moreh",
+    "event_summary": "Border trade facilitation center operational",
+    "timestamp": "2026-01-29T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area",
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892561",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area, market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Thoubal",
+    "location": "Thoubal",
+    "event_summary": "Handloom weavers cooperative meets",
+    "timestamp": "2026-01-26T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892583",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Manipur",
+    "district": "Ukhrul",
+    "location": "Ukhrul",
+    "event_summary": "Hill district festival attracts cultural delegations",
+    "timestamp": "2026-01-30T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892616",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Aizawl",
+    "location": "Aizawl",
+    "event_summary": "State capital hosts educational conference",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892638",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Champhai",
+    "location": "Champhai",
+    "event_summary": "Border village infrastructure project review",
+    "timestamp": "2026-01-29T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892660",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Khawzawl",
+    "location": "Khawzawl",
+    "event_summary": "District youth festival concludes successfully",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892683",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Saitual",
+    "location": "Saitual",
+    "event_summary": "Agricultural cooperative discusses bamboo cultivation",
+    "timestamp": "2026-01-27T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892706",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Kolasib",
+    "location": "Kolasib",
+    "event_summary": "Highway patrol reports smooth traffic flow",
+    "timestamp": "2026-01-31T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "highway_transit"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892727",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: highway_transit.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Lawngtlai",
+    "location": "Lawngtlai",
+    "event_summary": "Remote area mobile connectivity improved",
+    "timestamp": "2026-01-26T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892750",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Lunglei",
+    "location": "Lunglei",
+    "event_summary": "District hospital expansion work ongoing",
+    "timestamp": "2026-01-28T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 2,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892771",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 2/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Mamit",
+    "location": "Mamit",
+    "event_summary": "Border area residents welcome new facilities",
+    "timestamp": "2026-01-29T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892792",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Serchhip",
+    "location": "Serchhip",
+    "event_summary": "Traditional music festival held peacefully",
+    "timestamp": "2026-01-30T17:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "stabilizing",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892814",
+    "classification_rationale": "Classified as cognitive risk layer(s) with stabilizing polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Saiha",
+    "location": "Saiha",
+    "event_summary": "Wildlife conservation meeting addresses concerns",
+    "timestamp": "2026-01-25T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892836",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Mizoram",
+    "district": "Hnahthial",
+    "location": "Hnahthial",
+    "event_summary": "Community forest protection drive launched",
+    "timestamp": "2026-01-27T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892856",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Chümoukedima",
+    "location": "Chümoukedima",
+    "event_summary": "Industrial area expansion plans discussed",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892919",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Dimapur",
+    "location": "Dimapur",
+    "event_summary": "Commercial hub sees steady business activity",
+    "timestamp": "2026-01-29T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892945",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Kiphire",
+    "location": "Kiphire",
+    "event_summary": "Remote district connectivity project progressing",
+    "timestamp": "2026-01-30T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892969",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Kohima",
+    "location": "Kohima",
+    "event_summary": "State capital celebrates Hornbill festival legacy",
+    "timestamp": "2026-01-26T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.892991",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Longleng",
+    "location": "Longleng",
+    "event_summary": "Tribal council meeting addresses local issues",
+    "timestamp": "2026-01-31T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893014",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Meluri",
+    "location": "Meluri",
+    "event_summary": "New district administration settling in well",
+    "timestamp": "2026-01-27T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893036",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Mokokchung",
+    "location": "Mokokchung",
+    "event_summary": "Educational institutions resume after winter break",
+    "timestamp": "2026-01-28T08:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893066",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Mon",
+    "location": "Mon",
+    "event_summary": "Border area development program launched",
+    "timestamp": "2026-01-29T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893087",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Niuland",
+    "location": "Niuland",
+    "event_summary": "Agricultural extension program meets farmers",
+    "timestamp": "2026-01-30T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "escalatory",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893110",
+    "classification_rationale": "Classified as cognitive risk layer(s) with escalatory polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Noklak",
+    "location": "Noklak",
+    "event_summary": "Hill district infrastructure work ongoing",
+    "timestamp": "2026-01-25T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 2,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893133",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 2/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Peren",
+    "location": "Peren",
+    "event_summary": "Inter-district sports meet hosted successfully",
+    "timestamp": "2026-01-28T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893155",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Phek",
+    "location": "Phek",
+    "event_summary": "Traditional festival celebrated with enthusiasm",
+    "timestamp": "2026-01-31T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893177",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Shamator",
+    "location": "Shamator",
+    "event_summary": "Healthcare outreach program reaches villages",
+    "timestamp": "2026-01-27T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893199",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Tuensang",
+    "location": "Tuensang",
+    "event_summary": "District youth gathering promotes unity",
+    "timestamp": "2026-01-29T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893221",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Tseminyü",
+    "location": "Tseminyü",
+    "event_summary": "Agricultural fair showcases local produce",
+    "timestamp": "2026-01-26T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893244",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Wokha",
+    "location": "Wokha",
+    "event_summary": "Handloom exhibition attracts buyers",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893265",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Nagaland",
+    "district": "Zünheboto",
+    "location": "Zünheboto",
+    "event_summary": "Forest conservation awareness drive held",
+    "timestamp": "2026-01-28T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893288",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "Dhalai",
+    "location": "Ambassa",
+    "event_summary": "Tribal welfare program distributes benefits",
+    "timestamp": "2026-01-29T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893311",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "Gomati",
+    "location": "Udaipur",
+    "event_summary": "District administration reviews development projects",
+    "timestamp": "2026-01-30T13:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893335",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "Khowai",
+    "location": "Khowai",
+    "event_summary": "Agricultural market sees steady prices",
+    "timestamp": "2026-01-27T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "market_trade_hub"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893364",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: market_trade_hub.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "North Tripura",
+    "location": "Dharmanagar",
+    "event_summary": "Border area security review conducted",
+    "timestamp": "2026-01-31T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "physical"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "border_area"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893386",
+    "classification_rationale": "Classified as physical risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: border_area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "Sepahijala",
+    "location": "Bishramganj",
+    "event_summary": "Industrial park expansion plans discussed",
+    "timestamp": "2026-01-26T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893408",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "South Tripura",
+    "location": "Belonia",
+    "event_summary": "Tourism promotion campaign launched",
+    "timestamp": "2026-01-28T15:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893431",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "Unakoti",
+    "location": "Kailashahar",
+    "event_summary": "Historical site preservation work begins",
+    "timestamp": "2026-01-29T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893453",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Tripura",
+    "district": "West Tripura",
+    "location": "Agartala",
+    "event_summary": "State capital hosts cultural program",
+    "timestamp": "2026-01-30T16:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893474",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Sikkim",
+    "district": "East Sikkim",
+    "location": "Gangtok",
+    "event_summary": "State capital celebrates local festival",
+    "timestamp": "2026-01-28T11:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [
+      "capital_admin"
+    ],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893495",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: capital_admin.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Sikkim",
+    "district": "North Sikkim",
+    "location": "Mangan",
+    "event_summary": "High altitude tourism season preparation begins",
+    "timestamp": "2026-01-29T10:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893518",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Sikkim",
+    "district": "South Sikkim",
+    "location": "Namchi",
+    "event_summary": "Monastery festival attracts pilgrims",
+    "timestamp": "2026-01-30T14:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893539",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Sikkim",
+    "district": "West Sikkim",
+    "location": "Geyzing",
+    "event_summary": "Trekking route safety inspection completed",
+    "timestamp": "2026-01-27T09:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893560",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  },
+  {
+    "state": "Sikkim",
+    "district": "Pakyong",
+    "location": "Pakyong",
+    "event_summary": "New district celebrates anniversary",
+    "timestamp": "2026-01-31T12:00:00",
+    "source_url": null,
+    "source_type": "public_open_source",
+    "risk_layers": [
+      "cognitive"
+    ],
+    "polarity": "neutral",
+    "severity_score": 1,
+    "geo_sensitivity": [],
+    "ingestion_timestamp": "2026-02-03T15:25:16.893582",
+    "classification_rationale": "Classified as cognitive risk layer(s) with neutral polarity. Severity 1/5 based on event scale and characteristics. Geographic context: general area.",
+    "pii_redacted": true,
+    "district_level_only": true
+  }
+]

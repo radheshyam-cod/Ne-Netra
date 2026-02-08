@@ -1,10 +1,35 @@
 // Mock API service for GitHub Pages deployment
 const MOCK_DATA = {
+  // All 169 NE districts (organized by state)
   districts: [
-    "East Khasi Hills", "Dimapur", "Aizawl", "Kamrup Metro", "Dibrugarh",
-    "Imphal West", "Kohima", "Shillong", "Agartala", "Itanagar"
+    // Meghalaya (12)
+    "East Garo Hills", "West Garo Hills", "North Garo Hills", "South Garo Hills", "South West Garo Hills",
+    "East Khasi Hills", "West Khasi Hills", "South West Khasi Hills", "Eastern West Khasi Hills", "Ri-Bhoi",
+    "East Jaintia Hills", "West Jaintia Hills",
+    // Assam (35)
+    "Baksa", "Bajali", "Barpeta", "Bongaigaon", "Chirang", "Dhubri", "Goalpara", "Kamrup", "Kamrup Metropolitan",
+    "Kokrajhar", "Nalbari", "South Salmara-Mankachar", "Tamulpur", "Biswanath", "Darrang", "Sonitpur", "Udalguri",
+    "Charaideo", "Dhemaji", "Dibrugarh", "Golaghat", "Jorhat", "Lakhimpur", "Majuli", "Sivasagar", "Tinsukia",
+    "Dima Hasao", "Hojai", "Morigaon", "Nagaon", "Karbi Anglong", "West Karbi Anglong", "Cachar", "Hailakandi", "Karimganj",
+    // Arunachal Pradesh (26)
+    "Anjaw", "Changlang", "Dibang Valley", "East Kameng", "East Siang", "Kamle", "Kra Daadi", "Kurung Kumey",
+    "Lepa-Rada", "Lohit", "Longding", "Lower Dibang Valley", "Lower Siang", "Lower Subansiri", "Namsai",
+    "Pakke-Kessang", "Papum Pare", "Shi Yomi", "Siang", "Tawang", "Tirap", "Upper Dibang Valley",
+    "Upper Siang", "Upper Subansiri", "West Kameng", "West Siang",
+    // Manipur (16)
+    "Bishnupur", "Chandel", "Churachandpur", "Imphal East", "Imphal West", "Jiribam", "Kakching", "Kamjong",
+    "Kangpokpi", "Noney", "Pherzawl", "Senapati", "Tamenglong", "Tengnoupal", "Thoubal", "Ukhrul",
+    // Mizoram (11)
+    "Aizawl", "Champhai", "Khawzawl", "Saitual", "Kolasib", "Lawngtlai", "Lunglei", "Mamit", "Serchhip", "Saiha", "Hnahthial",
+    // Nagaland (17)
+    "Chümoukedima", "Dimapur", "Kiphire", "Kohima", "Longleng", "Meluri", "Mokokchung", "Mon", "Niuland",
+    "Noklak", "Peren", "Phek", "Shamator", "Tuensang", "Tseminyü", "Wokha", "Zünheboto",
+    // Tripura (8)
+    "Dhalai", "Gomati", "Khowai", "North Tripura", "Sepahijala", "South Tripura", "Unakoti", "West Tripura",
+    // Sikkim (6)
+    "East Sikkim", "North Sikkim", "South Sikkim", "West Sikkim", "Pakyong", "Soreng"
   ],
-  
+
   riskScores: {
     "East Khasi Hills": {
       district: "East Khasi Hills",
@@ -127,7 +152,7 @@ const MOCK_DATA = {
 const generateMockHistory = (district: string) => {
   const baseScore = MOCK_DATA.riskScores[district]?.score || 20;
   const history = [];
-  
+
   for (let i = 23; i >= 0; i--) {
     const variation = Math.random() * 20 - 10;
     const score = Math.max(0, Math.min(100, baseScore + variation));
@@ -137,7 +162,7 @@ const generateMockHistory = (district: string) => {
       risk_level: score > 60 ? 'high' : score > 30 ? 'medium' : 'low'
     });
   }
-  
+
   return history;
 };
 

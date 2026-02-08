@@ -59,3 +59,25 @@ function TooltipContent({
 }
 
 export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider };
+
+/**
+ * Simple tooltip wrapper for easy use
+ */
+export function SimpleTooltip({
+  children,
+  content,
+  side = 'top',
+}: {
+  children: React.ReactNode;
+  content: string;
+  side?: 'top' | 'right' | 'bottom' | 'left';
+}) {
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{children}</TooltipTrigger>
+      <TooltipContent side={side}>
+        <p>{content}</p>
+      </TooltipContent>
+    </Tooltip>
+  );
+}

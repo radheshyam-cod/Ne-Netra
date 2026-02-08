@@ -1,0 +1,20 @@
+# Phase 4: Security & Performance Dependencies
+
+# Security
+PyJWT>=2.8.0
+bcrypt>=4.1.0
+python-jose[cryptography]>=3.3.0
+
+# Caching
+redis>=5.0.0
+hiredis>=2.2.0  # C parser for Redis (faster)
+
+# Database
+psycopg2-binary>=2.9.0  # PostgreSQL adapter
+sqlalchemy>=2.0.0  # ORM (optional)
+
+# Existing
+fastapi
+pydantic
+uvicorn
+python-dotenv

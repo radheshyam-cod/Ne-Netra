@@ -1,9 +1,9 @@
 # NE-NETRA: Early Warning & Accountability Platform
 
-**North-East India District-Level Intelligence Dashboard**
+### North-East India District-Level Intelligence Dashboard
 
-[![DPDP Act 2023](https://img.shields.io/badge/DPDP_Act_2023-Compliant-green)]()
-[![License](https://img.shields.io/badge/License-Prototype-blue)]()
+![DPDP Act 2023](https://img.shields.io/badge/DPDP_Act_2023-Compliant-green)
+![License](https://img.shields.io/badge/License-Prototype-blue)
 
 ---
 
@@ -11,7 +11,9 @@
 
 NE-NETRA is an **AI-assisted, human-in-the-loop early warning system** designed for district-level administrators (District Magistrates, Superintendents of Police) in North-East India. It detects early signals of misinformation-driven escalation and provides **decision support only** - never automated enforcement.
 
+
 ### Key Principles
+
 - ✅ **District/block-level aggregation only** (no individual tracking)
 - ✅ **Public/synthetic data only** (no surveillance, no private messages)
 - ✅ **Decision support only** (final decisions always human-led)
@@ -23,17 +25,20 @@ NE-NETRA is an **AI-assisted, human-in-the-loop early warning system** designed 
 ## 📊 Problem Statement
 
 **Context**: North-East India faces periodic escalation events driven by:
+
 - Rapid spread of misinformation on social media
 - Coordinated mobilization in sensitive geographic zones
 - Language/dialect-specific content that evades national moderation
 
 **Gap**: Current systems lack:
+
 - Early warning capability at district level
 - Explainable risk scoring
 - Human-in-the-loop accountability
 - Privacy-compliant design
 
 **Solution**: NE-NETRA provides a **6-week pilot-ready prototype** demonstrating:
+
 1. Interpretable composite risk scoring (0-100)
 2. Dynamic geographic hotspot identification (Backend-driven)
 3. Context-aware suggested actions (Decision support)
@@ -43,7 +48,7 @@ NE-NETRA is an **AI-assisted, human-in-the-loop early warning system** designed 
 
 ## 🏗️ System Architecture
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                     FRONTEND (React)                        │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐     │
@@ -87,27 +92,33 @@ NE-NETRA is an **AI-assisted, human-in-the-loop early warning system** designed 
 
 NE-NETRA uses a **hierarchical 3-layer risk model** optimized for district-level early warning.
 
-```
+```text
 Composite Risk Score (CRS) = Sigmoid( w1*C_t + w2*N_t + w3*P_t )
 ```
+
 
 ### Layer 1: Cognitive Layer (C_t) - "What is being said?"
 - **Signals**: Toxicity (Inflammatory language), Sentiment Intensity, Code-Switching (Language mixing).
 - **Goal**: Detect intent and emotional charge.
 
+
 ### Layer 2: Network Layer (N_t) - "How is it spreading?"
 - **Signals**: Message Velocity (Msgs/hr), Virality (Share keywords), Cluster Density.
 - **Goal**: Detect coordinated mobilization and artificial amplification.
+
 
 ### Layer 3: Physical Layer (P_t) - "Where is it happening?"
 - **Signals**: Geo-sensitivity of district, Historical volatility baseline.
 - **Goal**: Contextualize digital signals with physical reality.
 
+
 ### Activation: Sigmoid Scaling
 - The linear combination is passed through a **Sigmoid function** to provide a normalized 0-100 probability score, differentiating between "noise" (low score) and "signal" (high score) effectively.
 
+
 ### Explainability
 Every score is decomposed into its 3 layers for the end-user (see "Risk Score Breakdown" in UI).
+
 
 ### Trend Detection
 - **Rising**: Message volume increased by 30%+ in last **6 hours**
@@ -133,7 +144,7 @@ Every score is decomposed into its 3 layers for the end-user (see "Risk Score Br
 ### Data Protection Safeguards
 
 | Requirement | Implementation |
-|------------|----------------|
+| :--- | :--- |
 | **No Individual Tracking** | District-level aggregation only. No names, phone numbers, or personal identifiers stored. |
 | **Public Data Only** | System designed for public forums, synthetic data. No private messages or surveillance. |
 | **Consent Required** | In production, only consented or publicly available data sources. |
@@ -187,9 +198,9 @@ python3 seed_db.py
 python3 main.py
 ```
 
-Backend will run at: **http://localhost:8000**
+Backend will run at: <http://localhost:8000>
 
-API docs available at: **http://localhost:8000/docs**
+API docs available at: <http://localhost:8000/docs>
 
 ### 3. Start Frontend (Terminal 2)
 
@@ -201,11 +212,11 @@ npm install
 npm run dev
 ```
 
-Frontend will run at: **http://localhost:5173**
+Frontend will run at: <http://localhost:5173>
 
 ### 4. Access Dashboard
 
-1. Open browser: **http://localhost:5173**
+1. Open browser: <http://localhost:5173>
 2. Select a district from dropdown (try **East Khasi Hills** for high-risk example)
 3. Explore features:
    - **Dashboard** - Overview with risk score and map
@@ -239,7 +250,7 @@ Frontend will run at: **http://localhost:5173**
 
 ## 📁 Project Structure
 
-```
+```text
 ne-netra/
 ├── backend/                    # Python FastAPI backend
 │   ├── main.py                # API server with all endpoints
@@ -287,7 +298,7 @@ ne-netra/
 ### Base URL: `http://localhost:8000`
 
 | Method | Endpoint | Description |
-|--------|----------|-------------|
+| :--- | :--- | :--- |
 | **GET** | `/` | Health check |
 | **POST** | `/ingest` | Ingest public/synthetic text data |
 | **POST** | `/analyze` | Run AI analysis for a district |
@@ -305,6 +316,7 @@ curl http://localhost:8000/risk-score/East%20Khasi%20Hills
 ```
 
 Response:
+
 ```json
 {
   "district": "East Khasi Hills",
@@ -376,6 +388,7 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 - **Key Feature**: Switch to this district to see "low priority" recommendations
 
 ### Scenario 2: Medium Risk District
+
 - **District**: Dimapur
 - **Expected Score**: 30-50 (Medium)
 - **What to Test**:
@@ -385,6 +398,7 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 - **Key Feature**: Good example for testing human-in-the-loop review
 
 ### Scenario 3: High Risk District
+
 - **District**: East Khasi Hills
 - **Expected Score**: 60+ (High/Critical)
 - **What to Test**:
@@ -397,6 +411,7 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 ![High Risk District Example](file:///Users/radheshyambhati/.gemini/antigravity/brain/0aeb5580-2549-4009-ade4-50c0bc51411c/.system_generated/click_feedback/click_feedback_1769792265307.png)
 
 ### Scenario 4: Testing Exports
+
 - **District**: Any high-risk district
 - **What to Test**:
   1. Navigate to Risk Analysis page
@@ -411,23 +426,27 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 ## 📋 Pilot Deployment Roadmap (6 Weeks)
 
 ### Week 1-2: Infrastructure Setup
+
 - [ ] Deploy backend on government cloud (NIC/MeitY)
 - [ ] Set up secure database (PostgreSQL)
 - [ ] Configure SSL/TLS
 - [ ] Onboard 2 pilot districts (e.g., Kamrup Metro, Dibrugarh)
 
 ### Week 3-4: Data Integration
+
 - [ ] Integrate public data sources (with consent/legal approval)
 - [ ] Set up data ingestion pipeline
 - [ ] Test risk scoring on real data
 - [ ] Train district officers on dashboard
 
 ### Week 5: Human-in-the-Loop Training
+
 - [ ] Conduct officer training sessions
 - [ ] Establish review protocols
 - [ ] Test full workflow: Ingest → Analyze → Review → Action
 
 ### Week 6: Evaluation & Iteration
+
 - [ ] Collect feedback from DM/SP offices
 - [ ] Measure: false positive rate, officer engagement, time-to-review
 - [ ] Refine AI thresholds based on ground truth
@@ -438,6 +457,7 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 ## 🎨 UI/UX Design Specification
 
 ### Design System
+
 - **Theme**: Dark, authoritative, calm
 - **Font**: Inter (Google Fonts)
 - **Colors**:
@@ -449,7 +469,7 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 
 ### Dashboard Layout
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  HEADER: NE-NETRA | District Selector | Live Time           │
 ├─────────────────────────────────────────────────────────────┤
@@ -495,20 +515,22 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 
 ## ⚠️ Limitations & Disclaimers
 
-### What This Prototype IS:
+### What This Prototype IS
 ✅ Proof-of-concept for 6-week controlled pilot  
 ✅ Demonstration of explainable AI + human-in-the-loop  
 ✅ District-level early warning capability  
 ✅ DPDP-compliant architecture  
 
-### What This Prototype IS NOT:
+
+### What This Prototype IS NOT
 ❌ Production-ready system (requires hardening)  
 ❌ Real-time monitoring (demo uses batch analysis)  
 ❌ Predictive policing tool  
 ❌ Surveillance system  
 ❌ Replacement for human judgment  
 
-### Known Limitations:
+
+### Known Limitations
 - **Synthetic data**: All demo data is fabricated for testing
 - **Keyword-based AI**: Simple interpretable logic (not deep learning)
 - **No encryption**: Prototype uses HTTP (production requires HTTPS)
@@ -516,7 +538,8 @@ Response: Array of historical risk scores for trend analysis and CSV export.
 - **SQLite**: Not for production scale (use PostgreSQL)
 - **Client-side exports**: PDF generation happens in browser (may have size limits)
 
-### Recent Fixes (v2.0):
+
+### Recent Fixes (v2.0)
 - ✅ **Fixed**: Number formatting shows clean values (15 instead of 15.123...)
 - ✅ **Fixed**: Layer scaling bug (now properly bounded to 0-10 range)
 - ✅ **Added**: Professional PDF/CSV export functionality
@@ -580,6 +603,7 @@ This is a **prototype for evaluation purposes**. Not for commercial use.
 ## 🙏 Acknowledgments
 
 This system is designed in accordance with:
+
 - **Digital Personal Data Protection Act, 2023** (India)
 - **IndiaAI Mission** governance framework
 - **MHA/MeitY** guidelines for law enforcement technology

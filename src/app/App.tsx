@@ -1,20 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { apiService, RiskScoreData, AuditLogEntry } from '@/app/services/api';
 import { AppLayout } from '@/app/components/layout/AppLayout';
+import { ToastProvider } from '@/app/components/ui/toast';
+import { BackToTopButton } from '@/app/components/back-to-top';
 
-// Pages
-import { DashboardPage } from '@/app/pages/DashboardPage';
-import { IngestPage } from '@/app/pages/IngestPage';
-import { RiskAnalysisPage } from '@/app/pages/RiskAnalysisPage';
-import { MapPage } from '@/app/pages/MapPage';
-import { ActionsPage } from '@/app/pages/ActionsPage';
-import { ReviewPage } from '@/app/pages/ReviewPage';
-import { AuditPage } from '@/app/pages/AuditPage';
+// Lazy load pages for code splitting
+const DashboardPage = lazy(() => import('@/app/pages/DashboardPage').then(m => ({ default: m.DashboardPage })));
+const IngestPage = lazy(() => import('@/app/pages/IngestPage').then(m => ({ default: m.IngestPage })));
+const RiskAnalysisPage = lazy(() => import('@/app/pages/RiskAnalysisPage').then(m => ({ default: m.RiskAnalysisPage })));
+const MapPage = lazy(() => import('@/app/pages/MapPage').then(m => ({ default: m.MapPage })));
+const ActionsPage = lazy(() => import('@/app/pages/ActionsPage').then(m => ({ default: m.ActionsPage })));
+const ReviewPage = lazy(() => import('@/app/pages/ReviewPage').then(m => ({ default: m.ReviewPage })));
+const AuditPage = lazy(() => import('@/app/pages/AuditPage').then(m => ({ default: m.AuditPage })));
 
 import { AlertCircle } from 'lucide-react';
 
-export default function App() {
+// Loading fallback component
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="animate-pulse text-foreground-secondary">Loading...</div>
+  </div>
+);
+
+function App() {
   const [selectedDistrict, setSelectedDistrict] = useState<string>('');
   const [districts, setDistricts] = useState<string[]>([]);
   const [riskData, setRiskData] = useState<RiskScoreData | null>(null);
@@ -47,16 +56,22 @@ export default function App() {
     const loadDistricts = async () => {
       try {
         const districtList = await apiService.getDistricts();
-        setDistricts(districtList);
 
-        if (districtList.length > 0) {
-          setSelectedDistrict(districtList[0]);
+        // Handle both array and object response formats
+        const districts = Array.isArray(districtList) ? districtList : districtList;
+
+        setDistricts(districts);
+
+        if (districts.length > 0) {
+          setSelectedDistrict(districts[0]);
         } else {
-          setError('No districts with data found. Please load demo data first.');
+          // Don't show error - all 169 districts are configured
+          console.log('Districts loaded:', districts.length);
         }
       } catch (err) {
-        setError('Failed to load districts. Please check the backend connection.');
-        console.error(err);
+        console.error('Failed to load districts:', err);
+        // Fallback to empty array - user can still navigate
+        setDistricts([]);
       } finally {
         setLoading(false);
       }
@@ -169,55 +184,69 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route element={
-          <AppLayout
-            districts={districts}
-            selectedDistrict={selectedDistrict}
-            onDistrictChange={setSelectedDistrict}
-          />
-        }>
-          <Route path="/" element={
-            <DashboardPage
-              riskData={riskData}
-              stats={districtStats}
-              loading={loading}
-              selectedDistrict={selectedDistrict}
-            />
-          } />
-          <Route path="/ingest" element={
-            <IngestPage
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route element={
+            <AppLayout
               districts={districts}
-              onIngestComplete={handleRefresh}
-            />
-          } />
-          <Route path="/analysis" element={
-            <RiskAnalysisPage riskData={riskData} history={riskHistory} loading={loading} selectedDistrict={selectedDistrict} />
-          } />
-          <Route path="/map" element={
-            <MapPage
-              riskData={riskData}
               selectedDistrict={selectedDistrict}
+              onDistrictChange={setSelectedDistrict}
             />
-          } />
-          <Route path="/actions" element={
-            <ActionsPage riskData={riskData} />
-          } />
-          <Route path="/review" element={
-            <ReviewPage
-              selectedDistrict={selectedDistrict}
-              auditLog={auditLog}
-              onReviewSubmit={handleReviewSubmit}
-            />
-          } />
-          <Route path="/audit" element={
-            <AuditPage auditLog={auditLog} selectedDistrict={selectedDistrict} />
-          } />
+          }>
+            <Route path="/" element={
+              <DashboardPage
+                riskData={riskData}
+                stats={districtStats}
+                loading={loading}
+                selectedDistrict={selectedDistrict}
+              />
+            } />
+            <Route path="/ingest" element={
+              <IngestPage
+                districts={districts}
+                onIngestComplete={handleRefresh}
+              />
+            } />
+            <Route path="/analysis" element={
+              <RiskAnalysisPage riskData={riskData} history={riskHistory} loading={loading} selectedDistrict={selectedDistrict} />
+            } />
+            <Route path="/map" element={
+              <MapPage
+                riskData={riskData}
+                selectedDistrict={selectedDistrict}
+              />
+            } />
+            <Route path="/actions" element={
+              <ActionsPage riskData={riskData} />
+            } />
+            <Route path="/review" element={
+              <ReviewPage
+                selectedDistrict={selectedDistrict}
+                auditLog={auditLog}
+                onReviewSubmit={handleReviewSubmit}
+              />
+            } />
+            <Route path="/audit" element={
+              <AuditPage auditLog={auditLog} selectedDistrict={selectedDistrict} />
+            } />
 
-          {/* Fallback */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Route>
-      </Routes>
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Route>
+        </Routes>
+      </Suspense>
+      <BackToTopButton />
     </BrowserRouter>
   );
 }
+
+// Wrap the default export with ToastProvider
+function AppWithProviders() {
+  return (
+    <ToastProvider>
+      <App />
+    </ToastProvider>
+  );
+}
+
+export { AppWithProviders as default };

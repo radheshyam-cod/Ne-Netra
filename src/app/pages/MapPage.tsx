@@ -20,7 +20,9 @@ export function MapPage({ riskData, selectedDistrict }: MapPageProps) {
                 <div>
                     <h2 className="text-2xl font-bold tracking-tight text-foreground">Geographic Risk Map</h2>
                     <p className="text-foreground-secondary mt-1">
-                        Spatial distribution of risk signals using H3 hexagonal clustering.
+                        {layerMode === 'hex' && "Spatial distribution of risk signals using H3 hexagonal clustering."}
+                        {layerMode === 'heatmap' && "Density-based visualization of risk concentrations across the region."}
+                        {layerMode === 'markers' && "Individual risk markers showing precise intelligence signal locations."}
                     </p>
                 </div>
                 {/* Layer Control */}

@@ -1,0 +1,143 @@
+/* Mobile Responsive Enhancements */
+
+/* Responsive Grid Improvements */
+@media (max-width: 768px) {
+
+    /* Dashboard Grid */
+    .dashboard-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Comparison View */
+    .comparison-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Card Padding */
+    .card {
+        padding: 1rem;
+    }
+
+    /* Font Sizes */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+    }
+
+    /* Navigation */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    /* Table Scroll */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Button Sizes */
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    /* Modal/Dialog Full Screen */
+    .dialog-content {
+        max-width: 100% !important;
+        max-height: 100% !important;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    /* Chart Heights */
+    .recharts-wrapper {
+        min-height: 250px !important;
+    }
+}
+
+@media (max-width: 640px) {
+
+    /* Extra Small Screens */
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    /* Compact Spacing */
+    .space-y-4 {
+        gap: 0.75rem;
+    }
+
+    /* Risk Score Display */
+    .risk-score-large {
+        font-size: 2rem !important;
+    }
+
+    /* Timeline Slider */
+    .timeline-buttons {
+        flex-wrap: wrap;
+    }
+
+    .timeline-buttons button {
+        flex: 1 1 45%;
+    }
+}
+
+/* Touch-Friendly Improvements */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Larger Touch Targets */
+    button,
+    a,
+    .clickable {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Remove Hover Effects */
+    .hover\:bg-slate-100:hover {
+        background-color: transparent;
+    }
+
+    /* Touch Feedback */
+    button:active,
+    .clickable:active {
+        opacity: 0.7;
+        transform: scale(0.98);
+    }
+}
+
+/* Landscape Mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .mobile-landscape-adjust {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+/* Tablet Optimization */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tablet-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tablet-hide {
+        display: none;
+    }
+}

@@ -1,0 +1,95 @@
+# Phase 6-10: Complete Dependencies
+
+# Existing (Phases 1-5)
+# ... all previous requirements ...
+
+# =================================
+# Phase 6: Advanced UX
+# =================================
+
+# Dashboard & Visualization
+react-grid-layout  # Drag-drop dashboards (frontend - npm)
+d3  # Advanced charts (frontend - npm)
+react-force-graph  # Network graphs (frontend - npm)
+
+# WebSockets
+python-socketio>=5.10.0
+websockets>=12.0
+
+# =================================
+# Phase 7: Advanced AI
+# =================================
+
+# Causal Inference
+dowhy>=0.11.0
+causalnex>=0.12.0
+
+# Explainable AI
+shap>=0.43.0
+lime>=0.2.0.1
+
+# Pattern Matching
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# =================================
+# Phase 8: Mobile
+# =================================
+
+# PWA (frontend - npm)
+# next-pwa
+# workbox-webpack-plugin
+
+# React Native (separate mobile project)
+# react-native>=0.73.0
+
+# WhatsApp (uses Twilio from Phase 5)
+# twilio>=8.10.0 (already installed)
+
+# =================================
+# Phase 9: Integration
+# =================================
+
+# API Management
+fastapi-limiter>=0.1.5
+slowapi>=0.1.9
+
+# Blockchain
+hyperledger-fabric-sdk-py>=1.0.0
+# OR simpler alternatives:
+web3>=6.0.0  # For Ethereum-based solutions
+
+# Data Sanitization
+faker>=20.0.0  # PII generation/masking
+presidio-analyzer>=2.2.0  # Microsoft Presidio for PII detection
+
+# =================================
+# Phase 10: Governance
+# =================================
+
+# ML Fairness
+fairlearn>=0.9.0
+aif360>=0.5.0  # AI Fairness 360
+
+# Bias Detection
+# (uses SHAP from Phase 7)
+
+# Time-based Access
+# (uses APScheduler from Phase 5)
+
+# =================================
+# Utilities
+# =================================
+
+# Enhanced data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Logging & Monitoring
+loguru>=0.7.0
+prometheus-client>=0.19.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+locust>=2.17.0  # Load testing

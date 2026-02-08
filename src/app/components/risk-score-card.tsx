@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/app/components/card';
 import { TrendingUp, TrendingDown, Minus, ChevronDown, ChevronUp, Info, Activity, Network, Brain, Map } from 'lucide-react';
+import { AlertNarrative } from '@/app/components/alert-narrative';
 
 type RiskTrend = 'rising' | 'stable' | 'falling';
 type RiskLevel = 'low' | 'medium' | 'high' | 'critical';
@@ -21,9 +22,26 @@ interface RiskScoreCardProps {
     network: number;
     physical: number;
   };
+  district?: string;
+  primary_trigger?: string;
+  time_to_escalation?: any;
+  threshold_info?: any;
+  className?: string;
 }
 
-export function RiskScoreCard({ score, trend, riskLevel, lastUpdated, components, layer_scores }: RiskScoreCardProps) {
+export function RiskScoreCard({
+  score,
+  trend,
+  riskLevel,
+  lastUpdated,
+  components,
+  layer_scores,
+  district,
+  primary_trigger,
+  time_to_escalation,
+  threshold_info,
+  className
+}: RiskScoreCardProps) {
   const [expanded, setExpanded] = useState(false);
 
   const trendConfig = {
@@ -70,6 +88,18 @@ export function RiskScoreCard({ score, trend, riskLevel, lastUpdated, components
   const TrendIcon = trendConfig[trend].icon;
   const levelConfig = riskLevelConfig[riskLevel];
 
+  // Prepare data for AlertNarrative
+  const narrativeData = {
+    score,
+    risk_level: riskLevel,
+    trend,
+    primary_trigger,
+    layer_scores,
+    time_to_escalation,
+    threshold_info,
+    district,
+  };
+
   // Helper to render component bar
   const ComponentBar = ({ label, value, max, icon: Icon }: { label: string, value: number, max: number, icon?: any }) => (
     <div className="space-y-1">
@@ -90,13 +120,16 @@ export function RiskScoreCard({ score, trend, riskLevel, lastUpdated, components
   );
 
   return (
-    <Card variant="elevated">
+    <Card variant="elevated" className={className}>
       <CardContent className="p-0">
         <div className="p-8 space-y-6">
           {/* Header */}
           <div className="flex items-start justify-between">
-            <div>
-              <h3 className="text-foreground-secondary mb-1">Composite Risk Score</h3>
+            <div className="flex-1">
+              <div className="flex items-center gap-2">
+                <h3 className="text-foreground-secondary">Composite Risk Score</h3>
+                <AlertNarrative riskData={narrativeData} variant="icon" />
+              </div>
               {lastUpdated && (
                 <p className="text-xs text-foreground-tertiary">Updated {lastUpdated}</p>
               )}

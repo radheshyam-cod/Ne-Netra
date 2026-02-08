@@ -7,10 +7,11 @@
 import { offlineManager } from './offline-manager';
 import { mockApi } from './mock-api';
 
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = '/api';
 
 // Always use mock API when not on localhost
-const USE_MOCK = !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+// const USE_MOCK = !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
+const USE_MOCK = false;
 
 export interface RiskScoreData {
   district: string;

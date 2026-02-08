@@ -1,0 +1,614 @@
+================================================================================
+NE-NETRA: EARLY WARNING & ACCOUNTABILITY PLATFORM
+SOLUTION APPROACH, TECHNICAL ARCHITECTURE & AI COMPONENTS
+================================================================================
+
+Version: 2.0 (UX Enhanced Edition)
+Last Updated: February 3, 2026
+Purpose: District-level early warning system for North-East India
+
+================================================================================
+1. SOLUTION APPROACH
+================================================================================
+
+1.1 PROBLEM STATEMENT
+---------------------
+North-East India faces periodic escalation events driven by:
+- Rapid spread of misinformation on social media
+- Coordinated mobilization in sensitive geographic zones
+- Language/dialect-specific content that evades national moderation
+
+Gap in Current Systems:
+- No early warning capability at district level
+- Lack of explainable risk scoring
+- Missing human-in-the-loop accountability
+- Non-privacy-compliant design
+
+1.2 SOLUTION OVERVIEW
+---------------------
+NE-NETRA provides a 6-week pilot-ready prototype demonstrating:
+
+1. Interpretable composite risk scoring (0-100 scale)
+2. Dynamic geographic hotspot identification (Backend-driven)
+3. Context-aware suggested actions (Decision support)
+4. Officer review panel with full audit trail
+
+1.3 CORE PRINCIPLES
+-------------------
+✓ District/block-level aggregation only (no individual tracking)
+✓ Public/synthetic data only (no surveillance, no private messages)
+✓ Decision support only (final decisions always human-led)
+✓ Full transparency (explainable AI, complete audit trail)
+✓ DPDP Act 2023 compliant (privacy-first design)
+
+1.4 KEY CAPABILITIES
+--------------------
+a) Early Warning System
+   - Real-time risk assessment at district level
+   - Trend detection (Rising/Stable/Falling)
+   - Geographic hotspot visualization
+   - 24-hour historical trend analysis
+
+b) Decision Support
+   - AI-generated suggested actions
+   - Priority-based recommendations
+   - Context-aware guidance for officers
+   - Human-in-the-loop verification required
+
+c) Accountability & Transparency
+   - Complete audit trail of all actions
+   - Officer review workflow with timestamps
+   - Explainable AI scoring (shows WHY score is high)
+   - Export functionality (PDF reports, CSV data)
+
+d) Privacy & Governance
+   - No individual tracking or profiling
+   - District-level aggregation only
+   - DPDP Act 2023 aligned
+   - Public/synthetic data sources only
+
+
+================================================================================
+2. TECHNICAL ARCHITECTURE
+================================================================================
+
+2.1 HIGH-LEVEL SYSTEM ARCHITECTURE
+-----------------------------------
+
+┌─────────────────────────────────────────────────────────────────┐
+│                     USER LAYER                                  │
+│  District Magistrate │ Superintendent of Police │ Admin         │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │ HTTPS (Port 443)
+                       ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                  PRESENTATION LAYER                              │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │             React Frontend (SPA)                         │  │
+│  │  - Dashboard Components                                  │  │
+│  │  - Real-time Updates                                     │  │
+│  │  - Responsive Design (1440px desktop)                    │  │
+│  │  - Material-UI + Custom Components                       │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │ REST API (JSON)
+                       ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   APPLICATION LAYER                              │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │           FastAPI Backend Server                         │  │
+│  │  ┌────────────────────────────────────────────────────┐  │  │
+│  │  │  API Endpoints:                                    │  │  │
+│  │  │  - /ingest (POST)    - Data ingestion             │  │  │
+│  │  │  - /analyze (POST)   - Trigger analysis           │  │  │
+│  │  │  - /risk-score (GET) - Get risk assessment        │  │  │
+│  │  │  - /review (POST)    - Submit officer review      │  │  │
+│  │  │  - /audit-log (GET)  - Retrieve audit trail       │  │  │
+│  │  └────────────────────────────────────────────────────┘  │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │
+                       ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   INTELLIGENCE LAYER                             │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │           AI Intelligence Engine                         │  │
+│  │  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐       │  │
+│  │  │  Sentiment  │ │  Toxicity   │ │  Velocity   │       │  │
+│  │  │  Analysis   │ │  Scoring    │ │  Calculator │       │  │
+│  │  └─────────────┘ └─────────────┘ └─────────────┘       │  │
+│  │         │               │               │               │  │
+│  │         └───────────────┴───────────────┘               │  │
+│  │                      │                                  │  │
+│  │           ┌──────────▼──────────┐                       │  │
+│  │           │ Composite Risk Score│                       │  │
+│  │           │   (0-100 Scale)     │                       │  │
+│  │           │ ┌─────────────────┐ │                       │  │
+│  │           │ │ Weighted Formula│ │                       │  │
+│  │           │ │ Sentiment: 25%  │ │                       │  │
+│  │           │ │ Toxicity:  35%  │ │                       │  │
+│  │           │ │ Velocity:  25%  │ │                       │  │
+│  │           │ │ Geo-Sens:  15%  │ │                       │  │
+│  │           │ └─────────────────┘ │                       │  │
+│  │           └─────────────────────┘                       │  │
+│  │                      │                                  │  │
+│  │         ┌────────────▼────────────┐                     │  │
+│  │         │  Explainability Engine  │                     │  │
+│  │         │  - Primary Trigger ID   │                     │  │
+│  │         │  - Contributing Factors │                     │  │
+│  │         │  - Trend Detection      │                     │  │
+│  │         └─────────────────────────┘                     │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└──────────────────────┬──────────────────────────────────────────┘
+                       │
+                       │ SQLAlchemy ORM
+                       ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                      DATA LAYER                                  │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │        SQLite Database (Prototype)                       │  │
+│  │        PostgreSQL (Production)                           │  │
+│  │                                                          │  │
+│  │  ┌────────────┐  ┌────────────┐  ┌────────────┐        │  │
+│  │  │  messages  │  │risk_scores │  │officer_    │        │  │
+│  │  │            │  │            │  │reviews     │        │  │
+│  │  │ district   │  │ district   │  │ district   │        │  │
+│  │  │ text       │  │ score      │  │ officer_id │        │  │
+│  │  │ timestamp  │  │ risk_level │  │ notes      │        │  │
+│  │  │ geo_type   │  │ trend      │  │ reviewed   │        │  │
+│  │  │ sentiment  │  │ components │  │ timestamp  │        │  │
+│  │  │ toxicity   │  │ trigger    │  │            │        │  │
+│  │  └────────────┘  └────────────┘  └────────────┘        │  │
+│  │                                                          │  │
+│  │  ┌────────────┐                                         │  │
+│  │  │audit_logs  │                                         │  │
+│  │  │            │                                         │  │
+│  │  │ district   │                                         │  │
+│  │  │ officer    │                                         │  │
+│  │  │ action     │                                         │  │
+│  │  │ timestamp  │                                         │  │
+│  │  │ metadata   │                                         │  │
+│  │  └────────────┘                                         │  │
+│  └──────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
+
+2.2 COMPONENT BREAKDOWN
+-----------------------
+
+A. FRONTEND (React + TypeScript + Vite)
+   Location: /src/app/
+   
+   Page Components (/src/app/pages/):
+   - DashboardPage.tsx       - Risk overview with map and statistics
+   - RiskAnalysisPage.tsx    - Detailed breakdown with export buttons
+   - ActionsPage.tsx         - AI-generated suggested actions
+   - ReviewPage.tsx          - Officer review form
+   - AuditPage.tsx           - Transparency and audit trail
+   - IngestPage.tsx          - Data ingestion interface
+   
+   Shared Components (/src/app/components/):
+   - dashboard-header.tsx           - District selector (searchable combobox)
+   - risk-score-card.tsx            - Composite score display (0-100)
+   - risk-explanation-panel.tsx     - Primary trigger + factors
+   - risk-map.tsx                   - Interactive H3 hexagonal grid map
+   - charts/RiskTrendChart.tsx      - 24-hour risk trend visualization
+   - ui/                            - Reusable UI primitives
+   
+   Utilities (/src/app/utils/):
+   - export.ts                      - PDF/CSV export functionality
+     * exportRiskAnalysisPDF()      - Professional PDF reports
+     * exportAuditLogCSV()          - Audit log CSV export
+     * exportRiskHistoryCSV()       - Trend data CSV export
+
+B. BACKEND (FastAPI + Python)
+   Location: /backend/
+   
+   Core Files:
+   - main.py                  - FastAPI application with all endpoints
+   - database.py              - SQLAlchemy models and session management
+   - models.py                - Pydantic request/response schemas
+   - intelligence.py          - AI logic and risk scoring
+   - seed_db.py               - Database seeding with demo data
+   - sample_data.py           - Synthetic data generator
+
+C. DATABASE SCHEMA
+   
+   Tables:
+   1. messages
+      - district, text, timestamp, source_type
+      - geo_sensitivity, sentiment_score, toxicity_score
+   
+   2. risk_scores
+      - district, score, risk_level, trend, primary_trigger
+      - sentiment_component, toxicity_component, velocity_component
+      - geo_sensitivity_component, timestamp
+   
+   3. officer_reviews
+      - district, risk_score_id, officer_name, officer_rank
+      - reviewed, notes, action_taken, timestamp
+   
+   4. audit_logs
+      - district, officer_name, action, timestamp, metadata
+
+2.3 API ENDPOINTS
+-----------------
+
+Base URL: http://localhost:8000
+
+| Method | Endpoint                    | Description                      |
+|--------|----------------------------|----------------------------------|
+| GET    | /                          | Health check                     |
+| POST   | /ingest                    | Ingest public/synthetic text    |
+| POST   | /analyze                   | Run AI analysis for district    |
+| GET    | /risk-score/{district}     | Get latest risk score           |
+| GET    | /risk-history/{district}   | Get 24-hour risk trend data     |
+| POST   | /review                    | Submit officer review           |
+| GET    | /audit-log/{district}      | Get audit trail                 |
+| GET    | /districts                 | List all districts              |
+| GET    | /stats/{district}          | Get district statistics         |
+
+2.4 TECHNOLOGY STACK
+--------------------
+
+Frontend:
+- React 18.3.1              - UI framework
+- TypeScript 5.x            - Type safety
+- Tailwind CSS 4.x          - Styling
+- Vite 6.x                  - Build tool
+- Recharts 2.15+            - Data visualization
+- jsPDF + jsPDF-AutoTable   - PDF generation
+
+Backend:
+- Python 3.9+               - Runtime
+- FastAPI 0.104+            - API framework
+- SQLAlchemy 2.0+           - ORM
+- Pydantic 2.5+             - Data validation
+- Uvicorn 0.24+             - ASGI server
+
+Database:
+- SQLite 3.x (Development)
+- PostgreSQL 14+ (Production)
+
+
+================================================================================
+3. AI COMPONENTS & INTELLIGENCE ENGINE
+================================================================================
+
+3.1 THREE-LAYER RISK MODEL
+---------------------------
+
+NE-NETRA uses a hierarchical 3-layer risk model optimized for district-level 
+early warning:
+
+Composite Risk Score (CRS) = Sigmoid(w1*C_t + w2*N_t + w3*P_t)
+
+LAYER 1: COGNITIVE LAYER (C_t) - "What is being said?"
+- Signals: Toxicity (Inflammatory language), Sentiment Intensity, 
+           Code-Switching (Language mixing)
+- Goal: Detect intent and emotional charge
+- Weight: 25% (Sentiment) + 35% (Toxicity) = 60% total
+
+LAYER 2: NETWORK LAYER (N_t) - "How is it spreading?"
+- Signals: Message Velocity (Msgs/hr), Virality (Share keywords), 
+           Cluster Density
+- Goal: Detect coordinated mobilization and artificial amplification
+- Weight: 25%
+
+LAYER 3: PHYSICAL LAYER (P_t) - "Where is it happening?"
+- Signals: Geo-sensitivity of district, Historical volatility baseline
+- Goal: Contextualize digital signals with physical reality
+- Weight: 15%
+
+3.2 AI ALGORITHMS (Implemented in /backend/intelligence.py)
+------------------------------------------------------------
+
+CLASS: RiskIntelligence
+
+A. SENTIMENT ANALYSIS
+   Method: analyze_sentiment(text: str) -> float
+   Returns: -1.0 (very negative) to +1.0 (very positive)
+   
+   Algorithm:
+   ```
+   positive_count = count(positive_keywords in text)
+   negative_count = count(negative_keywords in text)
+   sentiment = (positive_count - negative_count) / (positive + negative)
+   ```
+   
+   Keywords:
+   - Positive: "good", "great", "success", "peace", "harmony"
+   - Negative: "bad", "terrible", "crisis", "injustice", "fail"
+
+B. TOXICITY SCORING
+   Method: analyze_toxicity(text: str) -> float
+   Returns: 0.0 (not toxic) to 1.0 (highly toxic)
+   
+   Algorithm:
+   ```
+   high_toxic = count(high_toxicity_keywords) × 1.0
+   medium_toxic = count(medium_toxicity_keywords) × 0.5
+   low_toxic = count(low_toxicity_keywords) × 0.2
+   
+   if escalation_pattern_detected:
+       toxicity_score *= 1.5
+   
+   toxicity_score = min(1.0, toxicity_score / 10.0)
+   ```
+   
+   Keywords:
+   - High: "attack", "kill", "destroy", "burn", "riot", "violence", "bomb"
+   - Medium: "protest", "clash", "conflict", "tension", "anger"
+   - Low: "concern", "worry", "issue", "problem"
+   
+   Escalation Patterns (regex):
+   - \b(tomorrow|tonight|today)\s+(we|let's|time to)\b
+   - \bgather\s+(at|near|in)\b
+   - \bspread\s+(this|message|word)\b
+
+C. VELOCITY CALCULATION
+   Method: calculate_velocity(messages, time_window_hours=24) -> (float, int)
+   Returns: (velocity_score, message_count)
+   
+   Algorithm:
+   ```
+   recent_messages = messages in last N hours
+   messages_per_hour = len(recent_messages) / N
+   velocity_score = min(1.0, messages_per_hour / 10.0)
+   ```
+   
+   Baseline: 10+ messages/hour = very high velocity
+
+D. GEO-SENSITIVITY SCORING
+   Method: calculate_geo_sensitivity(geo_type: str) -> float
+   Returns: 0.0 to 1.0
+   
+   Weights:
+   - Sensitive Zone: 1.0
+   - Market: 0.8
+   - Highway: 0.7
+   - Normal: 0.3
+
+E. COMPOSITE RISK SCORE
+   Method: calculate_composite_risk_score(messages, district) -> dict
+   Returns: Explainable risk assessment
+   
+   Formula:
+   ```
+   # Normalize all components to 0-1 range
+   sentiment_component = (1.0 - avg_sentiment) / 2.0
+   toxicity_component = avg_toxicity
+   velocity_component = velocity_score
+   geo_component = avg_geo_sensitivity
+   
+   # Weighted composite
+   composite_score = (
+       sentiment_component × 0.25 +
+       toxicity_component × 0.35 +
+       velocity_component × 0.25 +
+       geo_component × 0.15
+   ) × 100
+   ```
+   
+   3-Layer Scores for Explainability (bounded to 0-10):
+   ```
+   layer_scores = {
+       'cognitive': min(toxicity_component, 1.0) × 10,
+       'network': min(velocity_component, 1.0) × 10,
+       'physical': min(geo_sensitivity_component, 1.0) × 10
+   }
+   ```
+   
+   Risk Levels:
+   - 0-25: Low (Green)
+   - 25-50: Medium (Amber)
+   - 50-75: High (Red)
+   - 75-100: Critical (Dark Red)
+
+3.3 TREND DETECTION
+-------------------
+- Rising: Message volume increased by 30%+ in last 6 hours
+- Stable: No significant change
+- Falling: Message volume decreased by 30%+ in last 6 hours
+
+3.4 EXPLAINABILITY ENGINE
+-------------------------
+Every risk score includes:
+1. Primary Trigger - Identifies the main contributing factor
+2. Contributing Factors - List of factors with severity levels
+3. Layer Breakdown - Shows cognitive/network/physical components
+4. Trend Analysis - Rising/Stable/Falling with historical context
+5. Hotspot Identification - Geographic locations with high activity
+
+Output Example:
+```json
+{
+  "score": 60,
+  "risk_level": "high",
+  "trend": "rising",
+  "primary_trigger": "Physical Risk (Geo-Volatility)",
+  "last_updated": "2 hours ago",
+  "components": {
+    "toxicity": 18.5,
+    "velocity": 15.2,
+    "geo_sensitivity": 20.0,
+    "temporal_acceleration": 8.3
+  },
+  "layer_scores": {
+    "cognitive": 3.7,
+    "network": 10.0,
+    "physical": 19.1
+  },
+  "contributing_factors": [
+    {
+      "label": "High Border Sensitivity",
+      "severity": "critical",
+      "value": "Score: 20/25"
+    }
+  ]
+}
+```
+
+3.5 AI ARCHITECTURE NOTES
+--------------------------
+- Keyword-based AI for Explainability: Uses interpretable logic rather 
+  than deep learning to ensure full transparency
+  
+- No Black-Box Models: All scoring is based on explicit rules that can 
+  be audited and explained to officers
+  
+- Human-in-the-Loop: AI provides suggestions only; final decisions 
+  always require human verification
+  
+- Privacy-First: No individual tracking, sentiment/toxicity analysis 
+  only on aggregated district-level data
+
+
+================================================================================
+4. DATA FLOWS
+================================================================================
+
+4.1 MESSAGE INGESTION FLOW
+---------------------------
+Public Data Source
+       │
+       ▼
+[API: POST /ingest]
+       │
+       ├─→ Validate input (Pydantic)
+       ├─→ Analyze sentiment
+       ├─→ Analyze toxicity
+       ├─→ Store in messages table
+       └─→ Create audit log entry
+
+4.2 RISK ANALYSIS FLOW
+----------------------
+[API: POST /analyze]
+       │
+       ├─→ Fetch all messages for district
+       │
+       ├─→ AI Intelligence Engine:
+       │   ├─→ Calculate sentiment component
+       │   ├─→ Calculate toxicity component
+       │   ├─→ Calculate velocity component
+       │   └─→ Calculate geo-sensitivity component
+       │
+       ├─→ Compute composite score (weighted formula)
+       ├─→ Determine risk level (low/medium/high/critical)
+       ├─→ Detect trend (rising/stable/falling)
+       ├─→ Identify primary trigger
+       ├─→ Build contributing factors (explainability)
+       ├─→ Store in risk_scores table
+       └─→ Create audit log entry
+
+4.3 OFFICER REVIEW FLOW
+-----------------------
+Dashboard
+       │
+       ▼
+Officer reviews risk assessment
+       │
+       ├─→ Reads suggested actions
+       ├─→ Checks "Reviewed" checkbox
+       ├─→ Enters notes
+       ├─→ [API: POST /review]
+       ├─→ Store in officer_reviews table
+       ├─→ Create audit log entry
+       └─→ Return to dashboard with updated audit log
+
+
+================================================================================
+5. GOVERNANCE & COMPLIANCE
+================================================================================
+
+5.1 DPDP ACT 2023 ALIGNMENT
+---------------------------
+| Requirement          | Implementation                                   |
+|---------------------|--------------------------------------------------|
+| Data Minimization   | Only district-level data, no personal IDs       |
+| Purpose Limitation  | Data used only for early warning, not profiling |
+| Consent             | Production requires consent for data sources    |
+| Transparency        | Full explainability of risk scores             |
+| Right to Deletion   | Database supports district-level data purging  |
+| Accountability      | Complete audit trail maintained                |
+
+5.2 WHAT IS IMPLEMENTED
+-----------------------
+✓ District/block-level aggregation only
+✓ Explainable AI with full transparency
+✓ Human-in-the-loop decision making
+✓ Complete audit trail
+✓ Officer review workflow
+✓ Export functionality for accountability
+
+5.3 WHAT IS NOT IMPLEMENTED (BY DESIGN)
+---------------------------------------
+✗ Face recognition
+✗ Individual profiling
+✗ Predictive policing
+✗ Automated enforcement
+✗ Private message monitoring
+✗ Cross-border data sharing without consent
+
+
+================================================================================
+6. LIMITATIONS & DISCLAIMERS
+================================================================================
+
+WHAT THIS PROTOTYPE IS:
+✓ Proof-of-concept for 6-week controlled pilot
+✓ Demonstration of explainable AI + human-in-the-loop
+✓ District-level early warning capability
+✓ DPDP-compliant architecture
+
+WHAT THIS PROTOTYPE IS NOT:
+✗ Production-ready system (requires hardening)
+✗ Real-time monitoring (demo uses batch analysis)
+✗ Predictive policing tool
+✗ Surveillance system
+✗ Replacement for human judgment
+
+KNOWN LIMITATIONS:
+- Synthetic data (all demo data is fabricated for testing)
+- Keyword-based AI (simple interpretable logic, not deep learning)
+- No encryption (prototype uses HTTP; production requires HTTPS)
+- Single-user (no authentication/authorization implemented)
+- SQLite (not for production scale; use PostgreSQL)
+- Client-side exports (PDF generation in browser with size limits)
+
+
+================================================================================
+7. DEPLOYMENT INFORMATION
+================================================================================
+
+PREREQUISITES:
+- Python 3.9+
+- Node.js 18+
+- npm or yarn
+
+QUICK START:
+
+1. Start Backend (Terminal 1):
+   cd backend
+   pip3 install -r requirements.txt
+   python3 seed_db.py          # First time only
+   python3 main.py
+   
+   Backend runs at: http://localhost:8000
+
+2. Start Frontend (Terminal 2):
+   npm install
+   npm run dev
+   
+   Frontend runs at: http://localhost:5173/Ne-Netra/
+
+3. Access Dashboard:
+   Open browser: http://localhost:5173/Ne-Netra/
+   Select district (try "East Khasi Hills" for high-risk example)
+
+
+================================================================================
+END OF DOCUMENT
+================================================================================

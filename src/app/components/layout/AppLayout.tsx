@@ -6,12 +6,11 @@ import { ComplianceFooter } from '../compliance-footer';
 import { cn } from '@/lib/utils';
 
 interface AppLayoutProps {
-    districts: string[];
     selectedDistrict: string;
     onDistrictChange: (district: string) => void;
 }
 
-export function AppLayout({ districts, selectedDistrict, onDistrictChange }: AppLayoutProps) {
+export function AppLayout({ selectedDistrict, onDistrictChange }: AppLayoutProps) {
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
     return (
@@ -31,7 +30,6 @@ export function AppLayout({ districts, selectedDistrict, onDistrictChange }: App
             >
                 {/* Sticky Header */}
                 <PageHeader
-                    districts={districts}
                     selectedDistrict={selectedDistrict}
                     onDistrictChange={onDistrictChange}
                 />

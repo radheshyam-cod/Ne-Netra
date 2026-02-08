@@ -746,3 +746,50 @@ layer_scores = {
 
 **Last Updated**: January 30, 2026  
 **Version**: 2.0.0 (UX Enhanced Edition)
+
+## Explainable AI Architecture (Glass Box Model)
+
+NE-NETRA uses a transparent "Glass Box" approach instead of opaque black-box models.
+
+```mermaid
+graph TD
+    subgraph BlackBox["❌ Traditional AI (Black Box)"]
+        A1[Input Data] --> B1[Deep Neural Network]
+        B1 --> C1[Risk Score: 85]
+        C1 -.-> D1["Why? 🤷 (Unknown features)"]
+    end
+
+    subgraph GlassBox["✅ NE-NETRA (Glass Box)"]
+        A2[Input Data] --> B2[Rule-Based Engine]
+        B2 --> C2[Risk Score: 85]
+        C2 --> D2["Why? 👇"]
+        D2 --> E1["Cognitive: High Toxicity detected (Keyword: 'attack')"]
+        D2 --> E2["Network: Velocity > 50 msgs/hr"]
+        D2 --> E3["Physical: Border District (East Sikkim)"]
+    end
+```
+
+### Transparent Decision Flow
+
+```mermaid
+flowchart LR
+    Ingest[📡 Ingestion] --> |"Raw Text (Aggregated)"| Layer1
+    
+    subgraph Analysis["🧠 Explainable Intelligence Engine"]
+        direction TB
+        Layer1[1. Cognitive Layer] --> |"Keywords & Sentiment"| Score1["Risk Points"]
+        Layer2[2. Network Layer] --> |"Velocity & Spread"| Score2["Risk Points"]
+        Layer3[3. Physical Layer] --> |"Geo-Modifiers"| Score3["Risk Points"]
+    end
+    
+    Score1 & Score2 & Score3 --> Calculation["📊 Weighted Formula"]
+    Calculation --> |"Composite Score (0-100)"| Output
+    
+    subgraph Human["👮 Human-in-the-Loop"]
+        Output[Dashboard Alert] --> Review{Officer Review}
+        Review --> |"Agree"| Action[Deploy Resources]
+        Review --> |"Disagree"| Feedback[Adjust Thresholds]
+    end
+    
+    Review -.-> |"Full Audit Trail"| Log[(Audit Database)]
+```

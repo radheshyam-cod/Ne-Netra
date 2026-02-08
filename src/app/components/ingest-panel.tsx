@@ -58,12 +58,10 @@ export function IngestPanel({ districts, onIngestComplete }: IngestPanelProps) {
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="space-y-1">
-                            <label className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">Target District</label>
-                            <select
-                                value={district}
-                                onChange={(e) => setDistrict(e.target.value)}
-                                className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                            >
+                            <label id="label-target-district" htmlFor="target-district" className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">
+                                Target District
+                            </label>
+                            <select title="Target District" name="target-district" id="target-district" aria-labelledby="label-target-district" value={district} onChange={(e) => setDistrict(e.target.value)} className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm">
                                 {districts.map(d => (
                                     <option key={d} value={d}>{d}</option>
                                 ))}
@@ -71,12 +69,8 @@ export function IngestPanel({ districts, onIngestComplete }: IngestPanelProps) {
                         </div>
 
                         <div className="space-y-1">
-                            <label className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">Source Type</label>
-                            <select
-                                value={sourceType}
-                                onChange={(e) => setSourceType(e.target.value)}
-                                className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                            >
+                            <label id="label-source-type" htmlFor="source-type" className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">Source Type</label>
+                            <select title="Source Type" name="source-type" id="source-type" aria-labelledby="label-source-type" value={sourceType} onChange={(e) => setSourceType(e.target.value)} className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm">
                                 <option value="public_forum">Public Forum</option>
                                 <option value="news_report">News Report</option>
                                 <option value="social_media">Social Media (Public)</option>
@@ -85,12 +79,8 @@ export function IngestPanel({ districts, onIngestComplete }: IngestPanelProps) {
                         </div>
 
                         <div className="space-y-1">
-                            <label className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">Geo Sensitivity</label>
-                            <select
-                                value={geoSensitivity}
-                                onChange={(e) => setGeoSensitivity(e.target.value)}
-                                className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-                            >
+                            <label id="label-geo-sensitivity" htmlFor="geo-sensitivity" className="text-xs font-medium text-foreground-tertiary uppercase tracking-wider">Geo Sensitivity</label>
+                            <select title="Geo Sensitivity" name="geo-sensitivity" id="geo-sensitivity" aria-labelledby="label-geo-sensitivity" value={geoSensitivity} onChange={(e) => setGeoSensitivity(e.target.value)} className="w-full bg-background-tertiary border border-border rounded-md px-3 py-2 text-foreground focus:outline-none focus:ring-2 focus:ring-primary text-sm">
                                 <option value="normal">Normal Area</option>
                                 <option value="market">Market / Commercial</option>
                                 <option value="highway">Highway / Transit</option>
