@@ -1,0 +1,1 @@
+import{j as e}from"./vendor-ui-BuuLDXGn.js";function i({level:i,className:s="",size:l="md"}){return e.jsx("span",{className:`inline-block rounded-full ${{low:"bg-severity-low",medium:"bg-severity-medium",high:"bg-severity-high",critical:"bg-severity-critical"}[i]} ${{sm:"w-2 h-2",md:"w-3 h-3",lg:"w-4 h-4"}[l]} ${s}`,"aria-label":`${i} severity`})}export{i as S};
