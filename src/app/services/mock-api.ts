@@ -187,6 +187,7 @@ export const mockApi = {
     return [
       {
         id: 1,
+        district: district,
         timestamp: new Date(Date.now() - 2 * 60 * 60 * 1000).toISOString(),
         officer_name: "SP Sharma",
         officer_rank: "Superintendent of Police",
@@ -196,6 +197,7 @@ export const mockApi = {
       },
       {
         id: 2,
+        district: district,
         timestamp: new Date(Date.now() - 6 * 60 * 60 * 1000).toISOString(),
         officer_name: "DM Patel",
         officer_rank: "District Magistrate",
@@ -208,7 +210,7 @@ export const mockApi = {
 
   async submitReview(reviewData: any) {
     await new Promise(resolve => setTimeout(resolve, 600));
-    return { success: true, message: "Review submitted successfully" };
+    return { status: "success", review_id: Date.now() };
   },
 
   async ingestData(data: any) {

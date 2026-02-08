@@ -7,7 +7,11 @@
 import { offlineManager } from './offline-manager';
 import { mockApi } from './mock-api';
 
-const API_BASE_URL = '/api';
+const NGROK_URL = 'https://ne-netra-backend.loca.lt'; // Stable localtunnel URL
+
+const API_BASE_URL = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? '/api'
+  : NGROK_URL;
 
 // Always use mock API when not on localhost
 // const USE_MOCK = !window.location.hostname.includes('localhost') && !window.location.hostname.includes('127.0.0.1');
@@ -93,7 +97,12 @@ class APIService {
       return mockApi.getRiskScore(district);
     }
 
-    const response = await fetch(`${API_BASE_URL}/risk-score/${encodeURIComponent(district)}`);
+    const response = await fetch(`${API_BASE_URL}/risk-score/${encodeURIComponent(district)}`, {
+      headers: {
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
+      }
+    });
 
     if (!response.ok) {
       throw new Error(`Failed to fetch risk score: ${response.statusText}`);
@@ -111,7 +120,12 @@ class APIService {
     }
 
     const response = await fetch(
-      `${API_BASE_URL}/audit-log/${encodeURIComponent(district)}?limit=${limit}`
+      `${API_BASE_URL}/audit-log/${encodeURIComponent(district)}?limit=${limit}`, {
+      headers: {
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
+      }
+    }
     );
 
     if (!response.ok) {
@@ -129,7 +143,12 @@ class APIService {
       return mockApi.getRiskHistory(district);
     }
 
-    const response = await fetch(`${API_BASE_URL}/risk-history/${encodeURIComponent(district)}`);
+    const response = await fetch(`${API_BASE_URL}/risk-history/${encodeURIComponent(district)}`, {
+      headers: {
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
+      }
+    });
 
     if (!response.ok) {
       throw new Error(`Failed to fetch risk history: ${response.statusText}`);
@@ -146,7 +165,12 @@ class APIService {
       return mockApi.getDistricts();
     }
 
-    const response = await fetch(`${API_BASE_URL}/districts`);
+    const response = await fetch(`${API_BASE_URL}/districts`, {
+      headers: {
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
+      }
+    });
 
     if (!response.ok) {
       throw new Error(`Failed to fetch districts: ${response.statusText}`);
@@ -160,7 +184,12 @@ class APIService {
    * Get statistics for a district
    */
   async getDistrictStats(district: string): Promise<DistrictStats> {
-    const response = await fetch(`${API_BASE_URL}/stats/${encodeURIComponent(district)}`);
+    const response = await fetch(`${API_BASE_URL}/stats/${encodeURIComponent(district)}`, {
+      headers: {
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
+      }
+    });
 
     if (!response.ok) {
       throw new Error(`Failed to fetch district stats: ${response.statusText}`);
@@ -192,6 +221,8 @@ class APIService {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
       },
       body: JSON.stringify(review),
     });
@@ -225,6 +256,8 @@ class APIService {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
       },
       body: JSON.stringify(message),
     });
@@ -248,6 +281,8 @@ class APIService {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Bypass-Tunnel-Reminder': 'true',
+        'ngrok-skip-browser-warning': 'true'
       },
       body: JSON.stringify({ district }),
     });
@@ -264,7 +299,12 @@ class APIService {
    */
   async healthCheck(): Promise<boolean> {
     try {
-      const response = await fetch(`${API_BASE_URL}/`);
+      const response = await fetch(`${API_BASE_URL}/`, {
+        headers: {
+          'Bypass-Tunnel-Reminder': 'true',
+          'ngrok-skip-browser-warning': 'true'
+        }
+      });
       return response.ok;
     } catch (error) {
       return false;
